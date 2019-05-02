@@ -98,6 +98,7 @@ class SignUpViewController: UIViewController {
 }
 
 extension SignUpViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             self.imageView.image = image
